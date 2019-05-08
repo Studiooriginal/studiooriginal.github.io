@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru" >
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<meta name=”description” content=”Урок о мета тегах для поисковой оптимизации”/>
+	<meta name=”keywords” content=”мета теги,поисковая оптимизация” />
+
+	<!-- Определяет автора контента:
+	<meta name = "author" content = "Denis Bolshakov"> -->
+
+	<!-- 	<meta name=”robots” content=”noindex, nofollow” />
+		noindex	запрещает индексирование документа.
+	nofollow	запрещает проход по ссылкам в документе.
+	index	разрешает индексирование документа.
+	follow	разрешает проход по ссылкам в документе. -->
+	
+
+	<!-- <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+	Атрибут name задает имя документа метаданным, значение "viewport" дает подсказку браузеру о размере начального размера области просмотра. Функция атрибута content задать значения для этого атрибута.
+	Значение width=device-width атрибута content сообщает, что ширина страницы устанавливается в соответствии с размером экрана устройства в аппаратно-независимых пикселях (device-independent pixel, dip), что позволяет странице пересчитывать положение элементов для корректного отображения на различных экранах. По аналогии допускается указать значения для высоты height=device-height.
+	Значение initial-scale=1 атрибута content сообщает браузеру, что необходимо установить соответствие 1:1 для пикселей CSS и аппаратно-независимых пикселей вне зависимости от ориентации устройства (альбомной или портретной). -->
+
+	<!-- С помощью данного мета тега можно указать браузеру на необходимость обновлять страницу через определённые промежутки времени.  Например, так опредлеяется обновление страницы каждые 30 секунд:
+	<meta http-equiv=”refresh” content=”30”> -->
+
+	<!-- <base href="http://www.microsoft.com/">
+	Элемент base позволяет указать базовый адрес, относительно которого устанавливаются другие адреса, используемые в документе:Хотя для ссылки в качестве адреса указана страница newpage.html, но фактически ее адресом будет content/newpage.html. То есть в одной папке с текущей страницей должна быть подпапка content, в которой должен находится файл newpage.html -->
+
+	<link rel="icon" href="img/logo.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+	<title>ASTRO</title>
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/sing-in-style.css">
+	<link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+<div id="wrepaper">
+
+
+  <div id="container"> 
+  
+	<header>
+		<div class="header-cont">
+		 <div class="header-box-logo">
+		 	<img src="img/logo.png" alt="">
+		 	<p>ASTRO</p> 
+		 </div>
+		 <div class="header-box-info">Это сайт о саморазвитии и личностном росте, о формировании личности и самосовершенствовании, о развитии личности.</div>
+		 <div class="header-box-contacts">
+		 	<p>г. Москва <br>
+			т.7(917)7981254<br>
+			e-mail: infi@astro.ru</p>
+		</div>
+		</div>
+	
+	</header> 
+  
+
+
+	<nav>
+		<a href="#">Главная</a>
+		<a href="#">Статьи</a>
+		<a href="#">Видео</a>
+		<a href="#" class="current">Гороскоп</a>
+		<a href="#">О Нас</a>
+	</nav>
+
+
+	<div class="content">
+	<div class="content-sidbar">
+		<a href="">Статьи</a><br>
+		<a href="">Интервью</a><br>
+		<a href="">Авторские колонки</a><br>
+		<a href="">Фотографии</a><br>
+		<a href="">Книги</a>
+		<div class="sing">
+			  <section class="container">
+		    <article class="half">
+			        <h1>astro</h1>
+			        <div class="tabs">
+				            <span class="tab signin active"><a href="#signin">Sign in</a></span>
+				            <span class="tab signup"><a href="#signup">Sign up</a></span>
+			        </div>
+			        <div class="content">
+				            <div class="signin-cont cont">
+					                <form action="#" method="post" enctype="multipart/form-data">
+						                    <input type="email" name="email" id="email" class="inpt" required="required" placeholder="Your email">
+						                    <label for="email">Your email</label>
+						                    <input type="password" name="password" id="password" class="inpt" required="required" placeholder="Your password">
+                						    <label for="password">Your password</label>
+						                    <input type="checkbox" id="remember" class="checkbox" checked>
+						                    <label for="remember">Remember me</label>
+						                    <div class="submit-wrap">
+							                        <input type="submit" value="Sign in" class="submit">
+							                        <a href="#" class="more">Forgot your password?</a>
+						                    </div>
+        					        </form>
+    				        </div>
+    				        <div class="signup-cont cont">
+                <form action="#" method="post" enctype="multipart/form-data">
+						                    <input type="name" name="name" id="name" class="inpt" required="required" placeholder="Your name">
+						                    <label for="name">Your name</label>
+                    <input type="email" name="email" id="email" class="inpt" required="required" placeholder="Your email">
+						                    <label for="email">Your email</label>
+						                    <input type="password" name="password" id="password" class="inpt" required="required" placeholder="Your password">
+                						    <label for="password">Your password</label>
+						                    <div class="submit-wrap">
+							                        <input type="submit" value="Sign up" class="submit">
+							                        <a href="#" class="more">Terms and conditions</a>
+						                    </div>
+        					        </form>
+            </div>
+			        </div>
+		    </article>
+		    <!-- <div class="half bg"></div> -->
+	</section>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+			
+
+
+		</div>
+
+
+	</div>
+	<div class="content-post">
+		<div class="post">
+		<img src="img/134-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/interesno/2019/04/odinokie-muzhchiny-sredi-znakov-zodiaka/">Одинокие мужчины среди знаков Зодиака</a>
+		</div>
+
+		<div class="post"><img src="img/blagoslovenie-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/samorazvitie-lifestyle/2019/04/inogda-razbitoe-serdtse-stanovitsya-skrytym-blagosloveniem/">Иногда разбитое сердце становится скрытым благословением</a>
+		</div>
+
+		<div class="post">
+		<img src="img/chakra-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/interesno/2019/04/33-priznaka-togo-chto-u-vas-zablokirovana-po-krajnej-mere-odna-chakra/">33 признака того, что у вас заблокирована по крайней мере одна чакра</a>
+		</div>
+
+		<div class="post"><img src="img/dusha-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/interesno/2019/04/korrektsiya-biopolya-po-znakam-zodiaka-2/">Коррекция биополя по знакам Зодиака</a>
+		</div>
+
+		<div class="post"><img src="img/dzen-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/samorazvitie-lifestyle/2019/04/12-prostyh-pravil-dzen-kotorye-preobrazyat-vashu-zhizn/">12 простых правил дзэн, которые преобразят вашу жизнь</a></div>
+
+		<div class="post"><img src="img/gnev-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/interesno/2019/04/5-znakov-zodiaka-ot-kotoryh-luchshe-derzhatsya-v-storone-kogda-oni-v-gneve/">5 знаков Зодиака, от которых лучше держаться в стороне, когда они в гневе</a></div>
+
+		<div class="post"><img src="img/harizma-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/samorazvitie-lifestyle/2019/04/5-veshhej-kotorye-harizmatichnye-lyudi-delayut-vezde-gde-by-ni-okazalis/">5 вещей, которые харизматичные люди делают везде, где бы ни оказались</a></div>
+
+		<div class="post"><img src="img/kotik-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/interesno/2019/04/10-zhiznennyh-urokov-kotorym-mozhet-nauchit-vasha-koshka/">10 жизненных уроков, которым может научить ваша кошка</a></div>
+
+		<div class="post"><img src="img/lyubov-1-290x290.jpg" alt=""><br>
+		<a href="http://www.cluber.com.ua/lifestyle/lichnaya-zhizn/2019/04/20-samyh-vazhnyh-sekretov-nastoyashhih-otnoshenij/">20 самых важных секретов настоящих отношений</a></div>
+	</div>
+	
+	
+
+	
+  
+  </div>
+
+  	<footer>
+		<div class="footer-cont">
+	
+		
+			<div class="footer-box-copir">
+			<p>© 2011 — 2019 
+			Копирование разрешено. Письменное уведомление и разрешение не требуется. Астро не против любого использования материалов со своего сайта, но при указании гиперссылки на источник.</p>
+			</div>
+			<div class="footer-box-info">
+			<p>Астро - это сайт о саморазвитии и личностном росте, о формировании личности и самосовершенствовании, о развитии личности. Мы собрали статьи, умные фильмы с просмотром онлайн и кино рецензиями, книги, музыку, полезные советы, мудрость, истории успеха и многое другое. Присоединяйтесь к нам!</p>
+			</div>
+			<div class="footer-box-cont">
+			<p>г. Москва <br>
+			т.7(917)7981254<br>
+			e-mail: infi@astro.ru</p>
+			</div>
+		</div>
+	</footer> 
+</div>
+
+
+  
+<div id="fon">
+
+	<script  src="js/index.js"></script> 
+
+</div>  
+
+<script src="js/nav-index.js"></script>
+ 
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+
+</html>
