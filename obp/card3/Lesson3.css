@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  font-family: 'Ubuntu', sans-serif;
+  color: #3a3a3a;
+}
+
+#app {
+  width: 900px;
+  height: 700px;
+  margin: 5px auto;
+  background: #fff;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  background: linear-gradient(135deg, #91bdf9 25%, #a1c6f0 52%, #ebf6ad 97%);
+}
+
+#lesson {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.wrepLesson {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 600px;
+  margin: 5px auto;
+  padding: 10px;
+  background: #fff;
+}
+
+.wrepLesson > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  display: none;
+  padding: 10px;
+}
+
+.wrepLesson :first-child {
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  top: 0px;
+  right: 200px;
+  border: 1px solid #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 2px 2px 18px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 2px 2px 18px 0px rgba(50, 50, 50, 0.75);
+}
+
+button {
+  margin: 3px 0px;
+}
+
+#teoriya {
+  overflow-y: scroll;
+  -webkit-box-shadow: 2px 2px 18px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 2px 2px 18px 0px rgba(50, 50, 50, 0.75);
+  background: #a3c8ee87;
+}
+
+#video {
+  -webkit-box-shadow: 2px 2px 18px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 2px 2px 18px 0px rgba(50, 50, 50, 0.75);
+}
+
+#test {
+  background: linear-gradient(135deg, #91bdf9 25%, #a1c6f0 52%, #ebf6ad 97%);
+}
+/*# sourceMappingURL=Lesson3.css.map */
